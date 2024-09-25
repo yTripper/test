@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",         // Используем модульный стандарт ECMAScript
+    "target": "ES6",            // Версия ECMAScript для компиляции
+    "moduleResolution": "node", // Устанавливаем способ разрешения модулей как в Node.js
+    "outDir": "./dist",         // Папка для скомпилированного кода
+    "esModuleInterop": true,    // Обеспечивает совместимость с CommonJS
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*.ts"],    // Включаем все файлы TypeScript в папке src
+  "exclude": ["node_modules"]    // Исключаем папку с установленными пакетами
+}

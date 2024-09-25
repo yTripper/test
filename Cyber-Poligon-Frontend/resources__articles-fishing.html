@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Онлайн-статьи и исследования - Киберполигон</title>
+  <link rel="stylesheet" href="../static/styles/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .article-header img {
+      max-width: 100%;
+      height: auto;
+    }
+    .article-content {
+      text-align: justify;
+      line-height: 1.7;
+    }
+    .article-content p {
+      margin-bottom: 1.5rem;
+    }
+    .article-image img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 2rem 0;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Навигационная панель -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-fluid">
+      <h1 class="ms-2 my-3"><a class="text-light text-decoration-none" href="index.html">Киберполигон</a></h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="training.html">Тренировка</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="courses.html">Курсы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">Ресурсы</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-decoration-underline text-light me-2 btn" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-success text-white text-center py-4">
+    <div class="container">
+      <h1>Фишинг</h1>
+      <p class="lead">Что это и как защититься</p>
+    </div>
+  </header>
+
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 mx-auto">
+          <div class="article-content">
+            <h2>Фишинг. Что это?</h2>
+            <p><strong>Фишинг</strong>, произошедший от фразы <strong>"phone phreaking"</strong> (взлом телефонных автоматов) и <strong>"fishing"</strong> (рыбная ловля), 
+                представляет собой вид интернет-мошенничества, направленный на получение конфиденциальных данных пользователей, таких как пароли, номера карт, банковские счета и 
+                прочая личная информация.</p>
+            <p>Этот вид атаки часто включает <strong>создание фейковых веб-сайтов</strong>, имитирующих страницы популярных компаний, таких как социальные сети, интернет-магазины, стриминговые сервисы и т. д. 
+                Хакеры надеются, что пользователи не заметят подделки и предоставят личные данные, такие как данные карты, логин, пароль или номер телефона.
+                 Если пользователь попадается на уловку, мошенники получают доступ к его данным.</p>
+            <p>Основная сложность фишинга заключается в том, что <strong>нет программного обеспечения</strong>, которое бы полностью защитило людей и компании: фейковые сайты трудно отличить от оригиналов. 
+                Все зависит от внимательности потенциальной жертвы и ее способности распознать фейковый сайт. В конечном итоге человеческий фактор играет решающую роль, и 
+                даже крупнейшие технологические компании могут оказаться уязвимыми.</p>
+            
+            <h2>Статистика</h2>
+            <p>Количество атак методом фишинга увеличивается с каждым годом. По данным отчета Hi-Tech Trends 2020/2021, 
+                предоставленного компанией Group-IB, специализирующейся на кибербезопасности, в 2020 году количество выявленных и заблокированных фишинговых 
+                ресурсов выросло более чем вдвое по сравнению с 2019 годом — на 118%. Этот тренд сохраняется уже длительное время. В 2019 году Group-IB заблокировала 
+                14 093 фишинговых страниц, в то время как в предыдущем году их было найдено всего 4 494.</p>
+
+            <p>Чаще всего хакеры подделывают следующие виды ресурсов:</p>
+            <ul>
+              <li>онлайн-сервисы (39,6%);</li>
+              <li>почтовые сервисы (15,6%);</li>
+              <li>финансовые учреждения (15%);</li>
+              <li>облачные хранилища (14,5%);</li>
+              <li>платежные сервисы (6,6%);</li>
+              <li>букмекерские конторы (2,2%).</li>
+            </ul>
+            
+            <p>Киберпреступники ориентируются на спрос пользователей на интернет-продукты. В 2020 году практически исчезли фишинг-ресурсы, заточенные под криптовалютные проекты, поскольку интерес к ним снизился. В период 2017-2018 годов именно они были наиболее популярны среди фишеров.</p>
+          </div>
+          <div class="article-image d-flex justify-content-center mx-auto">
+            <img src="../static/img/articles/fishing/pic1.png" alt="Пример фишинга">
+          </div>
+          <div class="article-image d-flex justify-content-center mx-auto">
+            <img src="../static/img/articles/fishing/pic2.png" alt="Пример фишинга">
+          </div>
+          <div class="article-image d-flex justify-content-center mx-auto">
+            <img src="../static/img/articles/fishing/pic3.png" alt="Пример фишинга">
+          </div>
+          <h2>Распространённые виды фишинга</h2>
+          <p>Существуют два основных способа распространения фейковых сайтов:</p>
+          <ul>
+            <li><strong>Рассылка по электронной почте или через мессенджеры.</strong> Это могут быть письма или сообщения, приходящие, казалось бы, от официальных организаций, таких как банки, регуляторы или государственные учреждения. Внутри этих сообщений скрыты маскированные под официальные документы, таблицы или картинки, вредоносные программы или ссылки на фальшивые сайты, на которые злоумышленники направляют жертву с целью получить её личные данные.</li>
+            <li><strong>Представление в результатах поиска.</strong> Мошенники часто используют этот метод в период массовых событий, таких как начало продаж новых моделей iPhone, онлайн-распродажи вроде «Черной пятницы» и другие праздничные или спортивные мероприятия.</li>
+          </ul>
+  
+          <p>В зависимости от способа сбора данных, фишинговые атаки также могут быть разделены на два типа:</p>
+          <ul>
+            <li><strong>Создание фейковых сайтов</strong>, которые имитируют оригинальный интерфейс и используют похожие домены, изменяя лишь один символ. Например, атака может использовать домен <em>AIiexpress.com</em> вместо <em>Aliexpress.com</em>.</li>
+            <li><strong>Фишинг через вредоносные файлы</strong>, обычно в формате .rar. При открытии этих файлов устройство заражается вирусом, который начинает собирать данные и отправлять их злоумышленникам.</li>
+          </ul>
+  
+          <h3>Как можно на это «клюнуть»?</h3>
+          <p>На 2023 год мошенники озощрились на фишинговые рассылки: использовали чат GPT, сообщения от имени военкоматов, Роскомнадзора, МЧС, распространение через сервис BlaBlaCar. Соответственно, каждый человек, будучи усталым или невнимательным, может легко попасться на фишинг (поэтому понятия фишинга и социальной инженерии связаны).</p>
+  
+          <h3>Кейсы-примеры</h3>
+          <ol>
+            <li><strong>Фишинговые электронные письма от банков:</strong> Пользователь получает электронное письмо, предположительно от своего банка, с требованием обновить личные данные или подтвердить аккаунт, в противном случае он будет заблокирован.</li>
+            <li><strong>Фишинговые SMS сообщения:</strong> Пользователь получает SMS с предложением получить приз или выиграть что-то вроде подарочной карты или скидки, но для этого ему нужно перейти по ссылке и заполнить форму с личными данными.</li>
+            <li><strong>Фишинговые веб-сайты:</strong> Пользователь случайно находит поддельный веб-сайт, который выглядит точно так же, как официальный сайт популярной компании или сервиса.</li>
+            <li><strong>Социальный фишинг:</strong> Злоумышленник маскируется под знакомого или коллегу пользователя в социальных сетях и запрашивает у него конфиденциальную информацию или перевод денег.</li>
+            <li><strong>Фишинговые телефонные звонки:</strong> Злоумышленник звонит пользователю, представляясь сотрудником банка, государственного учреждения или другой организации, и сообщает о проблеме с их аккаунтом или необходимости подтвердить личные данные для выполнения каких-то действий.</li>
+          </ol>
+  
+          <h3>Задание по анализу электронной почты</h3>
+          <p>Предоставить участникам несколько электронных писем и попросить их определить, какие из них могут быть фишинговыми. Письма могут содержать подозрительные ссылки, просьбы обновить личные данные, заполнить формы или выполнить действия с финансовыми данными.</p>
+  
+          <h4>Задание 1</h4>
+          <p>Вы получили такое письмо из банка. Откроете файл с подробностями?</p>
+  
+          <div class="article-image d-flex justify-content-center mx-auto">
+            <img src="../static/img/articles/fishing/pic4.png" alt="Пример фишинга">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="w-100 h-auto mt-5 p-5 text-light bg-dark">
+    <div class="navbar footer__container">
+        <p class="mt-5 footer__container-cyberpoligon">© 2024 Киберполигон</p>   
+        <div class="d-flex flex-column footer__container-information">
+            <p class="m-auto justify-content-center mb-3">Контактная информация</p>
+            <address class="d-flex flex-row gap-2 flex-wrap footer__address">
+                <a href="tel:+79885024344"><img src="../static/img/accept-phone-icon-social-icon-set-png.webp" alt="" width="40rem" class="footer__container-img"></a>
+                <p class="m-2">+79885024344</p>
+                <p class="m-2 footer__container-line">|</p>
+                <a href="mailto:polytech@polytech.ru"><img src="../static/img/112-gmail_email_mail-512.webp" alt="" width="40rem" class="footer__container-img"></a>
+                <p class="m-2">polytech@polytech.ru</p>
+            </address>    
+        </div>
+        <div class="d-flex flex-column footer__container-social-media">
+            <p class="m-auto justify-content-center mb-3">Мы в соц. сетях</p>
+            <address class="d-flex flex-row gap-2">
+                <a href="https://t.me/beloarte"><img src="../static/img/Telegram_logo.svg.webp" alt="Логотип Телеграм" width="40rem"></a>
+                <a href=""><img src="../static/img/VK_Compact_Logo_(2021-present).svg.png" alt="Логотип ВК" width="40rem"></a>
+                <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="mt-1"><img src="../static/img/Youtube_logo.png" alt="Логотип Ютуб" width="45rem"></a>           
+            </address>
+        </div>
+    </div>
+</footer>
+
+<!-- Форма регистрации -->
+<div class="modal fade text-light" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-dark">
+            <div class="modal-header">
+                <h5 class="modal-title" id="loginModalLabel">Вход</h5>
+                <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+            <!-- Форма входа -->
+                <form>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Введите Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@domain.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Введите Пароль</label>
+                        <input type="password" class="form-control" id="password" placeholder="Введите пароль" required>
+                    </div>
+                    <div class="form-check mb-3">
+                        <input type="checkbox" class="form-check-input" id="showPassword">
+                        <label class="form-check-label" for="showPassword">Показать пароль</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Войти</button>
+                </form>
+            </div>
+            <div class="modal-footer d-flex flex-column justify-content-center">
+                <a href="#" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#resetPasswordModal" data-bs-dismiss="modal">Забыли пароль?</a>
+                <p class="mb-0">Нет аккаунта? <a href="#" class="text-decoration-none" data-bs-toggle="modal" 
+                    data-bs-target="#registrationModal" data-bs-dismiss="modal">Зарегистрироваться</a></p>
+            </div>
+        </div>
+    </div>
+  </div>
+  <!-- Модальное окно Регистрация -->
+  <div class="modal fade text-light" id="registrationModal" tabindex="-1" aria-labelledby="registrationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content bg-dark">
+    <div class="modal-header">
+      <h5 class="modal-title" id="registrationModalLabel">Регистрация</h5>
+      <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="username" class="form-label">Введите Имя пользователя</label>
+          <input type="text" class="form-control" id="username" placeholder="Введите ваше имя" required>
+        </div>
+        <div class="mb-3">
+          <label for="registerEmail" class="form-label">Введите ваш Email</label>
+          <input type="email" class="form-control" id="registerEmail" placeholder="example@domain.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="registerPassword" class="form-label">Введите Пароль</label>
+          <input type="password" class="form-control" id="registerPassword" placeholder="Введите пароль" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Введите Пароль еще раз</label>
+          <input type="password" class="form-control" id="confirmPassword" placeholder="Повторите пароль" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Зарегистрироваться</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Вернуться ко входу</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  <!-- Модальное окно Восстановление пароля -->
+  <div class="modal fade text-light" id="resetPasswordModal" tabindex="-1" aria-labelledby="resetPasswordModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+  <div class="modal-content bg-dark">
+    <div class="modal-header">
+      <h5 class="modal-title" id="resetPasswordModalLabel">Восстановление пароля</h5>
+      <button type="button" class="btn-close bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="mb-3">
+          <label for="resetEmail" class="form-label">Введите ваш email</label>
+          <input type="email" class="form-control" id="resetEmail" placeholder="example@domain.com" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Отправить</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Вернуться ко входу</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- Конец тут -->
+
+<script src="../static/scripts/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
