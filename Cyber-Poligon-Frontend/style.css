@@ -162,3 +162,18 @@ footer {
     object-fit: cover; /* Обрезаем изображение, чтобы оно вписалось в указанный размер */
   }
   
+/* Кастомные алерты */
+
+.custom-alert {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 15px;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1050;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
