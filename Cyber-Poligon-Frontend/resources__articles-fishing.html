@@ -29,36 +29,50 @@
     }
   </style>
 </head>
+<div id="customAlert" class="custom-alert d-none">
+  <span id="customAlertMessage"></span>
+</div>
 <body>
-
+  
   <!-- Навигационная панель -->
   <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-    <div class="container-fluid">
-      <h1 class="ms-2 my-3"><a class="text-light text-decoration-none" href="index.html">Киберполигон</a></h1>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+    <h1 class="ms-2 my-3"><a class="text-light" href="index.html">Киберполигон</a></h1>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="border-0"><img src="../static/img/menu-button.png" width="40rem"></span>
+    </button>
+    <div class="collapse navbar-collapse ms-2" id="navbarNav">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="training.html">Тренировка</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="courses.html">Курсы</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="resources.html">Ресурсы</a>
-          </li>
-          <li class="nav-item">
-            <button class="nav-link text-decoration-underline text-light me-2 btn" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</button>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="training.html">Тренировка</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="courses.html">Курсы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="resources.html">Ресурсы</a>
+            </li>
+
+            <!-- Кнопка "Войти", которая заменяется на выпадающий список профиля -->
+            <li class="nav-item" id="loginLink">
+                <button class="nav-link text-decoration-underline text-light me-2 btn" data-bs-toggle="modal" data-bs-target="#loginModal">Войти</button>
+            </li>
+
+            <!-- Выпадающий список профиля -->
+            <li class="nav-item dropdown" id="profileDropdown" style="display: none;">
+                <a class="nav-link dropdown-toggle text-light" href="#" id="profileMenu" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <span id="usernameDisplay">Профиль</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileMenu">
+                    <li><a class="dropdown-item" href="personal_account.html">Профиль</a></li>
+                    <li><a class="dropdown-item" href="#" id="logoutButton">Выйти</a></li>
+                </ul>
+            </li>
         </ul>
-      </div>
     </div>
-  </nav>
+</nav>
 
   <header class="bg-success text-white text-center py-4">
     <div class="container">

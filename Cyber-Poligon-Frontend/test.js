@@ -29,3 +29,4 @@ function updateResult() {
     const resultText = document.getElementById('result');
     resultText.innerText = `Правильные ответы: ${correctAnswers} из ${totalQuestions}`;
 }
+
