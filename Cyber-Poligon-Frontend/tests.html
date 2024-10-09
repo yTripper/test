@@ -413,6 +413,7 @@ function submitResults() {
         const request = store.add(resultData);
         request.onsuccess = () => {
             console.log("Результаты успешно отправлены в базу данных.");
+            showCustomAlert("Результаты успешно отправлены в базу данных.", 'success');
         };
         request.onerror = (event) => {
             console.log("Ошибка при отправке результатов в базу данных:", event);
